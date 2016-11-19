@@ -135,9 +135,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\site.css" />
     <Content Include="Scripts\app\components.js" />
-    <Content Include="Scripts\app\components\filter.js" />
-    <Content Include="Scripts\app\components\pagination.js" />
-    <Content Include="Scripts\app\components\templates\pagination.html" />
+    <Content Include="Scripts\app\components\pagination\template.html" />
     <Content Include="Scripts\app\dataModel.js" />
     <Content Include="Scripts\app\filterModel.js" />
     <Content Include="Scripts\app\paginationModel.js" />

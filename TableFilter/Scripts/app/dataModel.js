@@ -1,6 +1,4 @@
-﻿require(['components/pagination', 'components/filter'], function () { });
-
-define("dataModel", ['knockout', 'knockout-mapping', 'filterModel', 'paginationModel'], function (ko, koMapping, filterModel, paginationModel) {
+﻿define("dataModel", ['knockout', 'knockout-mapping', 'filterModel', 'paginationModel'], function (ko, koMapping, filterModel, paginationModel) {
   ko.components.register('data-row', {
     template: '<tr><td data-bind="text: row.Name"></td><td data-bind="text: row.Active"></td><td data-bind="text: row.Status"></td></tr>'
   });
