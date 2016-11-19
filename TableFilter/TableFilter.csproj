@@ -136,6 +136,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="ko.Models\paginationModel.js" />
     <Content Include="ko.Templates\paginationTemplate.html" />
+    <Content Include="Scripts\app\dataModel.js" />
+    <Content Include="Scripts\app\filterModel.js" />
+    <Content Include="Scripts\app\paginationModel.js" />
     <Content Include="Scripts\lib\bootstrap.js" />
     <Content Include="Scripts\lib\bootstrap.min.js" />
     <None Include="Scripts\lib\jquery-1.10.2.intellisense.js" />

@@ -18,6 +18,6 @@
     respond: ["bootstrap"]
   }
 })
-require(['knockout', 'viewModel', 'domReady!'], function (ko, viewModel) {
-  ko.applyBindings(new viewModel());
+require(['knockout', 'dataModel'], function (ko, dataModel) {
+  ko.applyBindings(new dataModel());
 });

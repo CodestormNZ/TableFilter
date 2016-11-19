@@ -8,9 +8,16 @@
     <div class="modal-header">
       <span class="h3">Data Records</span>
     </div>
-    <a href="#" class="btn-xs btn-danger pull-right" data-bind="click: dm.loadData">New Data</a>
+    <!--<a href="#" class="btn-xs btn-danger pull-right" data-bind="click: dm.loadData">New Data</a>-->
     <div>
-      <component-pagination params="pager: pager"></component-pagination>
+      <!--<component-pagination params="pager: pager"></component-pagination>-->
+      <ul class="pagination">
+        <li data-bind="css: { disabled: pager.cur() === 0 }"><a href="#" data-bind="click: pager.prev">Previous</a></li>
+        <!-- ko foreach: { data: pager.pages, as: 'page' } -->
+        <li data-bind="css: { active: page.num === ($parent.pager.cur() + 1) }"><a href="#" data-bind="text: page.num, click: function() { $parent.pager.moveTo(page.num-1); }"></a></li>
+        <!-- /ko -->
+        <li data-bind="css: { disabled: pager.cur() === pager.max() || pager.max() == -1 }"><a href="#" data-bind="click: pager.next">Next</a></li>
+      </ul>
     </div>
     <table class="table table-striped table-hover">
       <thead>
@@ -21,11 +28,7 @@
         </tr>
       </thead>
       <tbody data-bind="foreach: pager.pagedData">
-        <!-- ko component: {
-          name: "component-tablerow",
-          params: { row: $data }
-        } -->
-        <!-- /ko -->
+        <tr><td data-bind="text: $data.Name"></td><td data-bind="text: $data.Active"></td><td data-bind="text: $data.Status"></td></tr>
       </tbody>
     </table>
   </div>
