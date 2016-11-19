@@ -56,10 +56,10 @@ namespace TableFilter.Models
 
   public class DataList
   {
-    public List<DataModel> Data { get; set; }
+    public List<DataModel> dataArray { get; set; }
     public DataList()
     {
-      Data = new List<DataModel>();
+      dataArray = new List<DataModel>();
     }
   }
 }

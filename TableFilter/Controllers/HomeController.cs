@@ -17,7 +17,7 @@ namespace TableFilter.Controllers
     public string DataAjaxLoader()
     {
       DataList dl = new DataList();
-      dl.Data.AddRange(new DataModel().GetData());
+      dl.dataArray.AddRange(new DataModel().GetData());
       var jsonData = JsonConvert.SerializeObject(dl);
       return jsonData;
     }

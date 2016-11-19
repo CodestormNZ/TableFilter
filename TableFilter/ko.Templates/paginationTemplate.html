@@ -1,0 +1,7 @@
+﻿<ul class="pagination">
+  <li data-bind="css: { disabled: pager.cur() === 0 }"><a href="#" data-bind="click: pager.prev">Previous</a></li>
+  <!-- ko foreach: { data: pager.pages, as: 'page' } -->
+  <li data-bind="css: { active: page.num === ($parent.pager.cur() + 1) }"><a href="#" data-bind="text: page.num, click: function() { $parent.pager.moveTo(page.num-1); }"></a></li>
+  <!-- /ko -->
+  <li data-bind="css: { disabled: pager.cur() === pager.max() || pager.max() == -1 }"><a href="#" data-bind="click: pager.next">Next</a></li>
+</ul>
