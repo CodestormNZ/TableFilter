@@ -161,7 +161,6 @@
     <Content Include="Scripts\lib\respond.js" />
     <Content Include="Scripts\lib\respond.min.js" />
     <Content Include="Scripts\lib\text.js" />
-    <Content Include="Scripts\app\viewModel.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
