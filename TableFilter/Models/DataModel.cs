@@ -15,7 +15,7 @@ namespace TableFilter.Models
     {
       List<DataModel> rslt = new List<DataModel>();
       Random rnd = new Random();
-      for (int i = 0; i < 2500; i++)
+      for (int i = 0; i < 5000; i++)
       {
         DataModel dm = new DataModel();
         string str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ  ";

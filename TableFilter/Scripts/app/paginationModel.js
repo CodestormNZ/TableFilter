@@ -1,7 +1,7 @@
 ﻿define("paginationModel", ['knockout'], function (ko) {
   return function paginationModel(data) {
     var self = this;
-    self.size = ko.observable(100);
+    self.size = ko.observable(250);
     self.cur = ko.observable(0);
 
     self.max = ko.pureComputed(function () {

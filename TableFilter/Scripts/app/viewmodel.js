@@ -5,7 +5,7 @@ ko.components.register('component-tablerow', {
   template: '<tr><td data-bind="text: row.Name"></td><td data-bind="text: row.Active"></td><td data-bind="text: row.Status"></td></tr>'
 });
 ko.components.register('component-pagination', {
-  template: { require: 'text!/ko.Templates/paginationTemplate.html' }
+  template: { require: 'text!../template/paginationTemplate.html' }
 });
 
 /*
